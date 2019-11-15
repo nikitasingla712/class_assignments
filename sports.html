@@ -8,9 +8,13 @@
   <style>
   * {
   box-sizing: border-box;
+
+  color:white;
   }
   body {
     position: relative;
+    background-color: Black;
+    color:white;
   }
   .affix {
     top:0;
@@ -47,26 +51,119 @@
   border-collapse: collapse;
   width:100%;
   color:black;
-  border:1px solid,black;
+  border:1px solid black;
+  Background-color: white;
 }
 #games th
 {
   padding:10px;
+  color:black;
   border:1px solid black;
+  Background-color: white;
 }
 #games td
 {
   padding:10px;
+  color:black;
   border:1px solid black;
+  Background-color: white;
+}
+#home
+{
+  background-color: Black;
+  color:white
+}
+.container1 {
+border: 2px solid white;
+background-color: orange;
+
+border-radius: 5px;
+padding: 16px;
+margin: 10px;
+float: left;
+width: 45%;
+    height: 100%;
 }
 
+.container1::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.container1 img {
+float: left;
+margin-right: 20px;
+border-radius: 50%;
+}
+
+.container1 span {
+font-size: 20px;
+margin-right: 15px;
+color: black;
+}
+
+@media (max-width: 500px) {
+.container1 {
+text-align: center;
+}
+.container1 img {
+margin: auto;
+float: none;
+display: block;
+}
+
+
+}
+
+.container3 {
+border: 2px solid white;
+background-color: orange;
+border-radius: 5px;
+padding: 16px;
+margin: 10px;
+float: right;
+width: 45%;
+  height: 100%;
+}
+
+.container3::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.container3 img {
+float: left;
+margin-right: 20px;
+border-radius: 50%;
+}
+
+.container3 span {
+font-size: 20px;
+color: black;
+margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+.container3 {
+text-align: center;
+}
+.container3 img {
+margin: auto;
+float: none;
+display: block;
+}
+
+
+}
   </style>
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="450" >
 <h1>
 <img src=logo.jpg height=5% width=5%>
  SPORTS COMPLEX</h1>
 <center>
-<body data-spy="scroll" data-target=".navbar" data-offset="450" >
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="" >
   <div class="container-fluid">
     <div class="navbar-header">
@@ -79,7 +176,7 @@
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="sports.html" name="home">HOME</a></li>
+          <li><a href=#home>HOME</a></li>
           <li><a href="#details">DETAILS</a></li>
           <li><a href="#booking">BOOKING</a></li>
           <li><a href="#testimonials">TESTIMONIALS</a></li>
@@ -91,9 +188,9 @@
   	</div>
   </div>
 </nav>
+<img src=sports.jpg width=100%>
 </center>
-<div>
-    <img src=sports.jpg width=100%>
+<div id=home>
     Sports are important primarily because they provide children and recreational participants with a social outlet and improve physical skills and health. Sports provide physical and psychological benefits to people of all ages.
 
 Engaging in after-school sporting events gives children the opportunity to be active and get plenty of exercise. In turn, being physically active makes them healthier by improving strength and flexibility. Children who participate in sports are also more likely to maintain a healthy diet and have higher levels of physical and cognitive energy. The benefits of sports participation transcend middle and high school, as children who play sports are thought to be more likely to maintain active lifestyles throughout their lives.
@@ -166,3 +263,17 @@ Engaging in after-school sporting events gives children the opportunity to be ac
                       <td>500</td>
                       <td>4800</td></tr>
 </table>
+<div id="testimonials">
+<h2>Testimonials</h2>
+
+         <div class="container1">
+ <img src="images.jpg" alt="Avatar" style="width:90px">
+ <p><font color="black">I needed to rent an indoor facility for my daughter at the last minute to prepare for a big event and the staff at the Sports Complex was accommodating, professional and able to respond quickly. The facility is perfect for our needs and I love the team sports room where you can watch the activity on the field through the windows instead of "intruding" directly on the field.
+Thanks to everyone for making working with you so easy!</font></p>
+</div>
+
+   <div class="container3">
+ <img src="download.jpg" alt="Avatar" style="width:90px">
+ <p><font color="black">We rented the All Sports facilities today for my son's birthday party and I was impressed. When I pulled up in the parking lot, their staff immediately met me at my car and unloaded all of my party supplies, cake, favors, etc. and brought them into the room. The manager took the time to come in and greet me and make sure I had everything I needed. The room itself was clean and well maintained, as was the building and field itself.</p>
+</font>   </div>
+           </div>
